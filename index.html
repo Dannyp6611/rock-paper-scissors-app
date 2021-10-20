@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js" defer></script>
+    <title>Rock Paper Scissors Game</title>
+  </head>
+  <body>
+    <div class="backdrop">
+      <div class="rules-modal">
+        <div class="rules-header">
+          <h4>rules</h4>
+          <button class="close-btn hide-mobile">
+            <img src="./images/icon-close.svg" alt="" />
+          </button>
+        </div>
+
+        <img src="./images/image-rules.svg" alt="rules image" />
+        <button class="close-btn hide-desktop">
+          <img src="./images/icon-close.svg" alt="" />
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <header>
+        <h1>rock paper scissors</h1>
+        <div class="score-container">
+          <h4>score</h4>
+          <span id="score">12</span>
+        </div>
+      </header>
+
+      <main>
+        <button class="btn-circle paper" data-choice="paper">
+          <div class="wrapper">
+            <img src="./images/icon-paper.svg" alt="paper icon" />
+          </div>
+        </button>
+        <button class="btn-circle scissors" data-choice="scissors">
+          <div class="wrapper">
+            <img src="./images/icon-scissors.svg" alt="scissors icon" />
+          </div>
+        </button>
+        <button class="btn-circle rock" data-choice="rock">
+          <div class="wrapper">
+            <img src="./images/icon-rock.svg" alt="rock icon" />
+          </div>
+        </button>
+      </main>
+
+      <button class="btn-rules">
+        <h4>rules</h4>
+      </button>
+    </div>
+
+    <div class="game-results">
+      <!-- Dynamic Content Here -->
+    </div>
+  </body>
+</html>
